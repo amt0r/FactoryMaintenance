@@ -30,9 +30,9 @@ include(":app")
 include(":core:database")
 include(":core:designsystem")
 include(":core:model")
-include(":feature:auth")
-include(":feature:executor")
-include(":feature:initiator")
+//include(":feature:auth")
+//include(":feature:executor")
+//include(":feature:initiator")
 
 check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
     """
@@ -41,3 +41,11 @@ check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
     https://developer.android.com/build/jdks#jdk-config-in-studio
     """.trimIndent()
 }
+include(":core:model")
+include(":core:common")
+include(":core:domain")
+include(":core:network")
+include(":core:datastore")
+include(":core:notifications")
+include(":core:navigation")
+include(":core:data")

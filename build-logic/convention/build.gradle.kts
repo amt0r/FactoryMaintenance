@@ -4,7 +4,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.factory.maintenance.buildlogic"
+group = "com.factorymaintenance.buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -31,11 +31,11 @@ tasks {
 gradlePlugin {
     plugins {
         register("androidApplication") {
-            id = "factory.android.application"
+            id = libs.plugins.factory.android.application.get().pluginId
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("androidLibrary") {
-            id = "factory.android.library"
+            id = libs.plugins.factory.android.library.get().pluginId
             implementationClass = "AndroidLibraryConventionPlugin"
         }
     }

@@ -4,10 +4,10 @@ plugins {
 }
 
 android {
-    namespace = "com.example.factorymaintenance"
+    namespace = "com.factorymaintenance"
 
     defaultConfig {
-        applicationId = "com.example.factorymaintenance"
+        applicationId = "com.factorymaintenance"
         versionCode = 1
         versionName = "1.0"
 

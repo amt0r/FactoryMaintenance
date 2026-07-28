@@ -3,10 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.database"
+    namespace = "com.factorymaintenance.core.database"
 }
 
-dependencies {
-
-
-}
+dependencies {}

@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.designsystem"
+    namespace = "com.factorymaintenance.core.designsystem"
 }
 
 dependencies {}
