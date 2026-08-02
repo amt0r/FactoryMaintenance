@@ -28,6 +28,7 @@ rootProject.name = "FactoryMaintenance"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
 include(":core:database")
+include(":core:ui")
 include(":core:designsystem")
 include(":core:model")
 include(":core:model")
@@ -42,6 +43,7 @@ include(":core:data")
 //include(":feature:executor")
 //include(":feature:initiator")
 
+
 check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
     """
     Now in Android requires JDK 17+ but it is currently using JDK ${JavaVersion.current()}.
@@ -49,6 +51,3 @@ check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
     https://developer.android.com/build/jdks#jdk-config-in-studio
     """.trimIndent()
 }
-
-
-include(":core:ui")

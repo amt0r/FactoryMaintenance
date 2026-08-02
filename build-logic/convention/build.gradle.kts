@@ -38,5 +38,9 @@ gradlePlugin {
             id = libs.plugins.factory.android.library.get().pluginId
             implementationClass = "AndroidLibraryConventionPlugin"
         }
+        register("jvmLibrary") {
+            id = libs.plugins.factory.jvm.library.get().pluginId
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }
