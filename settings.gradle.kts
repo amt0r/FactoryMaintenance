@@ -51,3 +51,4 @@ check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
 }
 
 
+include(":core:ui")
